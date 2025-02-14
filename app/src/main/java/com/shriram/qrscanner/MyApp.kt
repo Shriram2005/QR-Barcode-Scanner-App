@@ -33,9 +33,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-@Preview(showBackground = true)
 @Composable
-fun MyApp(viewModel: AppViewModel = AppViewModel()) {
+fun MyApp(viewModel: AppViewModel) {
 
     val context = LocalContext.current
     val clipboardManager: ClipboardManager = LocalClipboardManager.current
@@ -123,11 +122,6 @@ fun MyApp(viewModel: AppViewModel = AppViewModel()) {
                     .padding(8.dp)
                     .size(30.dp)
             )
-
         }
     }
-
-
 }
-
-
